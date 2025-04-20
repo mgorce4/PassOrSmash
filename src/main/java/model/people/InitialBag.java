@@ -13,5 +13,11 @@ public abstract class InitialBag {
 	public Collection<Person> getPeople() {
 		return people;
 	}
+	
+	public void describe() {
+		for (Person person : people) {
+			System.out.println(person.getName());
+		}
+	}
 
 }
