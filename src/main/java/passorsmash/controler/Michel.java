@@ -12,7 +12,7 @@ public class Michel implements Michelable {
 	@Override
 	public void initPOS() {
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("Bienvenue dans Pass or Smash !\nChoisissez un mode !\n1 - Choses\n2 - Personnalités\n");
+		System.out.println(name + ": Bienvenue dans Pass or Smash !\nChoisissez un mode !\n1 - Choses\n2 - Personnalités\n");
 		int choixUsr = scanner.nextInt();
 		
 		switch(choixUsr) {
