@@ -12,7 +12,9 @@ public class ThingsBag extends InitialBag {
 	public void initializeThingsBag() {
 		people.add(new Person("Un banc public mouillé", "src/main/resources/people/things/wetBench.jpg"));
 		people.add(new Person("Le coin de la table basse","src/main/resources/people/things/tableBasse.jpg"));
-		people.add(new Person("Un escalier en colimaçon mal éclairé",""));
+		people.add(new Person("Un escalier en colimaçon mal éclairé","src/main/resources/people/things/escaliers.png"));
+		people.add(new Person("Une flaque d'eau tiède inconnue","src/main/resources/people/things/flaque.jpg"));
+
 
 	}
 	
@@ -21,5 +23,7 @@ public class ThingsBag extends InitialBag {
 			System.out.println(person.getName());
 		}
 	}
+	
+	
 	
 }
