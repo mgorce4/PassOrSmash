@@ -1,4 +1,4 @@
-package model;
+package controler;
 
 public class Michel {
 	

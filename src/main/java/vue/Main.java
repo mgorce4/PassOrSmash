@@ -1,6 +1,6 @@
 package vue;
 
-import model.Michel;
+import controler.Michel;
 
 public class Main {
 
