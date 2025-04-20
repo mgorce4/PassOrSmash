@@ -1,11 +1,11 @@
-package vue;
+package passorsmash.vue;
 
-import controler.Michel;
+import passorsmash.controler.Michel;
 
 public class Main {
 
 	public static void main(String[] args) {
-		//TODO
+		
 
 	}
 

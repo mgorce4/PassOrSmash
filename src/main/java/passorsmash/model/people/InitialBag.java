@@ -1,4 +1,4 @@
-package model.people;
+package passorsmash.model.people;
 
 import java.util.Collection;
 

@@ -1,4 +1,4 @@
-package model.people;
+package passorsmash.model.people;
 
 public class Person {
 	private String name;
