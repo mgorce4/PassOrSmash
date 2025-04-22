@@ -23,26 +23,26 @@ public class Michel implements Michelable {
 			switch(choixUsr) {
 			case 1 : 
 				ThingsBag thingsbag = new ThingsBag();
-				System.out.println("Vous avez choisi le mode Choses !\nVoici ce que vous allez devoir passer en revue : \n");
+				System.out.println(name + ": Vous avez choisi le mode Choses !\nVoici ce que vous allez devoir passer en revue : \n");
 				thingsbag.describe();
 				break;
 			case 2 : 
 				PeopleBag peoplebag = new PeopleBag();
-				System.out.println("Vous avez choisi le mode Personnalités !\nVoici ce que vous allez devoir passer en revue : \n");
+				System.out.println(name + ": Vous avez choisi le mode Personnalités !\nVoici ce que vous allez devoir passer en revue : \n");
 				peoplebag.describe();
 				break;
 			case 0 :
-				System.out.println("Merci d'avoir joué !\nA bientôt !");
+				System.out.println(name + ": Merci d'avoir joué !\nA bientôt !");
 				break;
 			default:
-				System.out.println("Nombre inconnu.");
+				System.out.println(name + ": Nombre inconnu.");
 			}
 		}
 		
 	}
 	
 	public void displayMenu() {
-		System.out.println("Choisissez un mode !\n1 - Choses\n2 - Personnalités\n0- Quitter");
+		System.out.print(name + ": Choisissez un mode !\n1 - Choses\n2 - Personnalités\n0- Quitter\nChoix : ");
 	}
 	
 	
