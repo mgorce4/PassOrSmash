@@ -12,10 +12,11 @@ public class Michel implements Michelable {
 	@Override
 	public void initPOS() {
 		Scanner scanner = new Scanner(System.in);
-		int choixUsr = 0;
+		int choixUsr = 3;
 		System.out.println(name + ": Bienvenue dans Pass or Smash !");
 		
-		while (choixUsr !=1 || choixUsr != 2) {
+		while (choixUsr != 0) {
+
 			displayMenu();
 			choixUsr = scanner.nextInt();
 			
@@ -30,6 +31,9 @@ public class Michel implements Michelable {
 				System.out.println("Vous avez choisi le mode Personnalités !\nVoici ce que vous allez devoir passer en revue : \n");
 				peoplebag.describe();
 				break;
+			case 0 :
+				System.out.println("Merci d'avoir joué !\nA bientôt !");
+				break;
 			default:
 				System.out.println("Nombre inconnu.");
 			}
@@ -38,8 +42,9 @@ public class Michel implements Michelable {
 	}
 	
 	public void displayMenu() {
-		System.out.println("Choisissez un mode !\n1 - Choses\n2 - Personnalités\n");
+		System.out.println("Choisissez un mode !\n1 - Choses\n2 - Personnalités\n0- Quitter");
 	}
+	
 	
 	
 }
