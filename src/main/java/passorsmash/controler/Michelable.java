@@ -4,5 +4,7 @@ public interface Michelable {
 	
 	public void initPOS();
 	
+	public void displayMenu();
+	
 	
 }
