@@ -25,4 +25,8 @@ public class Person {
 		this.photoPath = photoPath;
 	}
 	
+	public String describe() {
+		return "Name: " + name + ", Photo Path: " + photoPath;
+	}
+	
 }

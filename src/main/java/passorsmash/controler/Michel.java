@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import passorsmash.model.people.PeopleBag;
 import passorsmash.model.people.ThingsBag;
+import passorsmash.model.player.Player;
 
 public class Michel implements Michelable {
 	
@@ -11,12 +12,13 @@ public class Michel implements Michelable {
 
 	@Override
 	public void initPOS() {
+		Player player = new Player();
 		Scanner scanner = new Scanner(System.in);
 		int choixUsr = 3;
 		System.out.println(name + ": Bienvenue dans Pass or Smash !");
 		
+		
 		while (choixUsr != 0) {
-
 			displayMenu();
 			choixUsr = scanner.nextInt();
 			
@@ -44,6 +46,7 @@ public class Michel implements Michelable {
 	public void displayMenu() {
 		System.out.print(name + ": Choisissez un mode !\n1 - Choses\n2 - Personnalités\n0- Quitter\nChoix : ");
 	}
+	
 	
 	
 	
