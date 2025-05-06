@@ -12,7 +12,7 @@ public class PassBag {
 		this.passedPersons = persons;
 	}
 	
-	public Collection<Person> getSmashedPersons() {
+	public Collection<Person> getPassedPersons() {
 		return passedPersons;
 	}
 

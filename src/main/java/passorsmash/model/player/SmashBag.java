@@ -24,5 +24,8 @@ public class SmashBag {
 	public void addPerson(Person person) {
 		this.smashedPersons.add(person);
 	}
-
+	
+	public Collection<Person> getSmashedPersons() {
+		return smashedPersons;
+	}
 }

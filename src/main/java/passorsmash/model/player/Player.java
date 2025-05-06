@@ -1,7 +1,5 @@
 package passorsmash.model.player;
 
-import java.util.Collection;
-
 import passorsmash.model.people.Person;
 
 public class Player {
@@ -9,12 +7,16 @@ public class Player {
 	private Integer id;
 	private String pseudo;
 	private String password;
+	private PassBag passBag;
+	private SmashBag smashBag;
 
 	
-	public Player(Integer id, String pseudo, String password ) {
+	public Player(Integer id, String pseudo, String password , PassBag passBag, SmashBag smashBag ) {
 		this.id = id;
 		this.pseudo = pseudo;
 		this.password = password;
+		this.passBag = passBag;
+		this.smashBag = smashBag;
 	}
 
 	public Player(String pseudo, String password) {
@@ -46,11 +48,17 @@ public class Player {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
-	public void describeBag(Collection<Person> persons) {
-		for (Person person : persons) {
+	
+	public void describePassBag() {
+		for (Person person : passBag.getPassedPersons()) {
 			System.out.println(person.describe());
 		}
 	}
-
+	
+	
+	public void describeSmashBag() {
+		for (Person person : smashBag.getSmashedPersons()) {
+			System.out.println(person.describe());
+		}
+	}
 }
